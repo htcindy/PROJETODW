@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="utf-8" />
+    <title>login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/login.css"/>
+    <script src="../script/login.js"></script>
+  </head>
+  <body>
+    <div class="dead"></div>
+    <div class="container">
+      <h1>Login</h1>
+      <div class="inputs">
+        <span>E-mail:</span>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div class="inputs">
+        <span>Senha:</span>
+        <style>
+          img {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+          }
+          a:link {
+            color: rgb(146, 228, 255);
+            background-color: transparent;
+            text-decoration: none;
+          }
+          a:visited {
+            color: rgb(146, 228, 255);
+            background-color: transparent;
+            text-decoration: none;
+          }
+          a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+          }
+          a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+          }
+        </style>
+        <input type="password" name="password" id="password" />
+        <p>Não tem conta?Faça o <a href="../view/cadastro.html">cadastro!</a></p>
+      </div>
+      <button onclick="login()" class="cadastrar" id="login" type="submit">Entrar</button>
+    <div id="carregamento" style="display:none;" style="color: rgb(73, 73, 73);">Carregando...</div>
+    </div>
+  </body>
+</html>

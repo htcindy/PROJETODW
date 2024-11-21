@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/cadastro.css" />
+    <script defer src='../script/cadastro.js'></script>
+    <title>cadastro</title>
+  </head>
+  <body>
+    <div class="dead"></div>
+    <div class="container">
+      <h1>CADASTRO</h1>
+      <div class="inputs">
+        <span>Nome:</span>
+        <input type="text" name="name" id="name" />
+      </div>
+
+      <div class="inputs">
+        <span>E-mail:</span>
+        <input type="email" name="email" id="email" />
+      </div>
+
+      <div class="inputs">
+        <span>Senha:</span>
+        <input type="password" name="password" id="password" />
+      </div>
+
+      <div class="inputs">
+        <span>CPF:</span>
+        <input type="text" name="cpf_cnpj" id="cpf_cnpj" />
+      </div>
+
+      <div class="inputs">
+        <span>Data de Nascimento:</span>
+        <input type="date" name="birthday" id="birthday" />
+      </div>
+
+      <div class="inputs" style="flex-direction: row">
+        <span>Termos e Condições</span>
+        <input type="checkbox" name="terms" id="terms" />
+      </div>
+
+      <button onclick="cadastro()" class="cadastrar">Cadastre-se</button>
+    </div>
+
+  </body>
+
+</html>
